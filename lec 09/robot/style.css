@@ -8,6 +8,7 @@ h1 {
 
 .head,
 .left_arm,
+
 .torso,
 .right_arm,
 .left_leg,
@@ -35,21 +36,34 @@ h1 {
 .upper_body {
     width: 300px;
     height: 150px;
-    display: flex;
+    display:flex;
+    align-content: center;
 }
 
 .left_arm, .right_arm {
     width: 40px;
     height: 125px;
     border-radius: 100px;
+    display: flex;
+    flex-flow:column-reverse wrap-reverse;
+    justify-content:center;
+    align-content:space-between;
+    align-content: center;
+
 }
 
 .left_arm {
     margin-right: 10px;
+    display: flex;
+    flex-flow:column-reverse wrap-reverse;
+    justify-content:center;
+    align-content:space-between;
+
 }
 
 .right_arm {
     margin-left: 10px;
+    display: flex;
 }
 
 .torso {
@@ -59,8 +73,8 @@ h1 {
 }
 
 .lower_body {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     /* This is another useful property. Hmm what do you think it does?*/
     margin: 0 auto;
 
@@ -73,7 +87,7 @@ h1 {
 }
 
 .left_leg {
-    margin-left: 45px;
+    margin-left: 50px;
 }
 
 .left_leg:hover {
@@ -85,7 +99,7 @@ h1 {
 }
 
 .right_leg {
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
 .left_eye, .right_eye {
@@ -106,7 +120,7 @@ h1 {
 
 .right_eye {
     position: relative;
-    top: 100px;
+    top: 80px;
     left: 120px;
 }
 
